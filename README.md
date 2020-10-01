@@ -8,7 +8,7 @@
 * Once work on a particular branch is complete, create a Pull Request and let the team know, so that the review and merge process can begin.
 * Do not push any code to Master. The PR has to be approved by at least 2 other members of the team.
 
-# Installation Instructions
+# Installation Instructions - for Ubuntu users
 ## Ruby setup
 ### Ruby Version Manager (RVM) :
 The ruby environment has been setup on the system using RVM as it gives us greater flexibility to use different versions of Ruby and install/remove gems [1] without breaking already installed packages.
