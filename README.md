@@ -11,7 +11,7 @@
 # Installation Instructions - for Ubuntu users
 ## Ruby setup
 ### Ruby Version Manager (RVM) :
-The ruby environment has been setup on the system using RVM as it gives us greater flexibility to use different versions of Ruby and install/remove gems [1] without breaking already installed packages.
+The ruby environment has been setup on the system using RVM as it gives us greater flexibility to use different versions of Ruby and install/remove gems without breaking already installed packages.
 
 You can install RVM using: ***USE GIT REPOSITORY FOR INSTALLATION***
 
@@ -25,9 +25,8 @@ curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 * Open Command tab and tick "Run command as a login shell" and Close
 
 ## Rails setup
-The application had begun with a rails build of Rails 4.0 on Ruby 2.0. The newer version of Rails 4.2 was not back-compatible with Rails 4.0 and was not ported for a long time. The application had been ported to the latest Rails 5.0.0 (due to the back-compatibility added) running on Ruby 2.3.2. Currently, the application uses Rails 5.2.2 running on Ruby 2.6.1
 
-You can install Ruby 2.6.1 using :
+You can install Ruby 2.6.5 using :
 
 ```bash
 rvm install 2.6.5
@@ -41,7 +40,9 @@ gem install rails -v 6.0.2
 ```
 
 To install few JS gems, you need NodeJS installed on your system:
-`sudo apt install nodejs`
+```bash
+sudo apt install nodejs
+```
 
 To install the RMagick gem, install the following in your system:
 
