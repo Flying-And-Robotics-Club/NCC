@@ -1,825 +1,857 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Avilon Bootstrap Template</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <!--===============================================================>
 
-  <!-- Favicons -->
-  <link href="/img/favicon.png" rel="icon">
-  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+    Theme Name: Trax
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page , Multi Parallax Template
+    Tags: one page, multi page, multipurpose, parallax, creative, html5
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <=================================================================-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trax</title>
+    <link href="images\favicon.ico" rel="icon">
 
-  <!-- Bootstrap CSS File -->
-  <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <%= stylesheet_link_tag "/lib/bootstrap/css/bootstrap.min.css" %>
+  <%= stylesheet_link_tag "/css/all.min.css" %>
+  <%= stylesheet_link_tag "/css/animate.min.css" %>
+  <%= stylesheet_link_tag "/css/owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "/css/jquery.fancybox.min.css" %>
+  <%= stylesheet_link_tag "/css/tooltipster.min.css" %>
+  <%= stylesheet_link_tag "/css/cubeportfolio.min.css" %>
+  <%= stylesheet_link_tag "/css/revolution/navigation.css" %>
+  <%= stylesheet_link_tag "/css/revolution/settings.css" %>
+  <%= stylesheet_link_tag "/css/style.css" %>
 
-  <!-- Libraries CSS Files -->
-  <link href="/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Avilon
-    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
-
 <body>
 
-<!--==========================
-  Header
-============================-->
-<header id="header">
-  <div class="container">
-
-    <div id="logo" class="pull-left">
-      <h1><a href="#intro" class="scrollto">NITK NCC</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="cssload-loader"></div>
     </div>
+</div>
+<!--PreLoader Ends-->
+<!-- header -->
+<!-- header -->
+<!--Main Slider-->
+<header class="site-header" id="header">
+  <%= render "navbar" %>
+  <div id="close_side_menu" class="tooltip"></div>
+  <!-- End side menu -->
+</header>
 
-    <nav id="nav-menu-container">
-      <ul class="nav-menu">
-        <li class="menu-active"><a href="#intro"><B>Home</B></a></li>
-       <!-- <li><a href="#about">About NCC</a></li>-->
-        <li class="menu-has-children"><a href="#about"><B>ABOUT NCC</B></a>
-          <ul>
-            <li><a href="/pages/history" >History</a></li>
-            <li><a href="/pages/aims">Aims of NCC</a></li>
-            <li><a href="/pages/motto">Motto of NCC</a></li>
-            <li><a href="/users/sign_in">NCC FLAG</a></li>
-            <% if current_user != nil %>
-            <li><a href="/users/sign_out">Log out</a></li>
-              <% end %>
-            <li><a href="/pages/nccsong">NCC SONG</a></li>
-          </ul>
-        </li>
-
-
-        <li><a href="#features"><B>ENROLLMENT</B></a></li>
-        <!--<li><a href="#pricing"><B>DOWNLOAD</B></a></li>-->
-        <li class="menu-has-children"><a href="#"><B>DOWNLOADS</B></a>
-          <ul>
-            <li><%= link_to"NCC Act and Rules","/nccrules.pdf",:target => "_blank"%></li>
-            <li><%= link_to"ANO Handbook","/anohandbook.pdf",:target => "_blank"%></li>
-            <li><%= link_to"PI Staff Handbook","/pistaffhandbook.pdf",:target => "_blank"%></li>
-            <li><%= link_to"Cadet's Handbook","/nccrules.pdf",:target => "_blank"%></li>
-            <li><%= link_to"Cadet's Enrollment Book","/nccrules.pdf",:target => "_blank"%></li>
-           <!-- <li><a href="#">ANO Handbook</a></li>
-            <li><a href="#">PI Staff Handbook</a></li>
-            <li><a href="#">Cadet's Handbook</a></li>
-            <li><a href="#">Cadet's Enrollment Book</a></li>-->
-          </ul>
-        </li>
-        <li><a href="#team"><B>ALUMNI</B></a></li>
-        <li><a href="#gallery"><B>Gallery</B></a></li>
-        <li class="menu-has-children"><a href=""><B>Drop Down</B></a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="menu-has-children"><a href="#">Drop Down 2</a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-            <li><a href="#">Drop Down 5</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><B>Contact Us</B></a></li>
-      </ul>
-    </nav><!-- #nav-menu-container -->
-  </div>
-</header><!-- #header -->
-
-<!--==========================
-  Intro Section
-============================-->
-<section id="intro">
-
-  <div class="intro-text">
-    <h2><B>Welcome to 2 KAR ENGR COY NCC</B></h2>
-    <p><B>National Institute Of Technology Karnataka, Surathkal</B></p>
-    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-  </div>
-<!--
-  <div class="product-screens">
-
-    <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
-      <img src="/img/product-screen-1.png" alt="">
-    </div>
-
-    <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-      <img src="/img/product-screen-2.png" alt="">
-    </div>
-
-    <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
-      <img src="/img/product-screen-3.png" alt="">
-    </div>
-
-  </div>
--->
-</section><!-- #intro -->
-
-<main id="main">
-
-  <!--==========================
-    About Us Section
-  ============================-->
-  <section id="about" class="section-bg">
-    <div class="container-fluid">
-      <div class="section-header">
-        <h3 class="section-title">About NCC</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">
-          National Cadet Corps is a Tri-Services Organisation comprising the Army, Navy and Air Force,<BR> engaged in grooming the youth – ‘The Leaders of Tomorrow’ – into disciplined and patriotic citizens.      </p>
-        </p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 about-img wow fadeInLeft">
-          <img src="/img/about-img.jpg" alt="">
-        </div>
-
-        <div class="col-lg-6 content wow fadeInRight">
-          <h4 style="color:darkcyan"><B>“UNITY AND DISCIPLINE-एकता और अनुशासन”</B></h4>
-          <h3>The NCC provides opportunities to the youth of the country for their all-round development with a sense of Duty, Commitment, Dedication, Discipline and Moral Values so that they become able leaders and useful citizens.</h3>
-          <h4><B>AIMS OF NCC</B></h4>
-          <ul>
-            <li><i class="ion-android-checkmark-circle"></i> To Create a Human Resource of Organized, Trained and Motivated Youth, To Provide Leadership in all Walks of life and be Always Available for the Service of the Nation.</li>
-            <li><i class="ion-android-checkmark-circle"></i> To Provide a Suitable Environment to Motivate the Youth to Take Up a Career in the Armed Forces.</li>
-            <li><i class="ion-android-checkmark-circle"></i> To Develop Character, Comradeship, Discipline, Leadership, Secular Outlook, Spirit of Adventure, and Ideals of Selfless Service amongst the Youth of the Country</li>
-          </ul>
-
-
-        </div>
-      </div>
-
-    </div>
-  </section><!-- #about -->
-  <!--==========================
-    Product Featuress Section
-  ============================-->
-  <section id="features">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-lg-8 offset-lg-4">
-          <div class="section-header wow fadeIn" data-wow-duration="1s">
-            <h3 class="section-title">Enrollment Procedure</h3>
-            <p>NCC cadet enrolment process is very important in the NCC cadet’s selection. Due
-              care has been maintained to make selection procedure should be transparent and
-              unbiased. NCC cadet’s selection has taken place in four stages. </p>
-            <span class="section-divider"></span>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-5 features-img">
-          <img src="/img/product-features.png" alt="" class="wow fadeInLeft" height="500" width="500">
-        </div>
-
-        <div class="col-lg-8 col-md-7 ">
-
-          <div class="row">
-
-            <div class="col-lg-6 col-md-6 box wow fadeInRight">
-              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-              <h4 class="title"><a href="">Written Test</a></h4>
-              <p class="description">Objective type questions on Gk, Arithmetic, Mental Aptitude, Thematic Apperception
-                Test (TAT), Word Association Test (WAT) and Situation Response Test.</p>
-            </div>
-            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
-              <div class="icon"><i class="ion-ios-flask-outline"></i></div>
-              <h4 class="title"><a href="">Physical Test</a></h4>
-              <p class="description">Running,Push ups</p>
-            </div>
-            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
-              <div class="icon"><i class="ion-social-buffer-outline"></i></div>
-              <h4 class="title"><a href="">Personal Interview</a></h4>
-              <p class="description">Short listed cadets in written round are called for personal interview. </p>
-            </div>
-            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-              <h4 class="title"><a href="">Merit on the basis of Vacancies</a></h4>
-              <p class="description">Finale result</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section><!-- #features -->
-  <!--==========================
-    Product Advanced Featuress Section
-  ============================-->
-  <!--
-  <section id="advanced-features">
-
-    <div class="features-row section-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img class="advanced-feature-img-right wow fadeInRight" src="/img/advanced-feature-1.jpg" alt="">
-            <div class="wow fadeInLeft">
-              <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-              <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-              <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="features-row">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img class="advanced-feature-img-left" src="/img/advanced-feature-2.jpg" alt="">
-            <div class="wow fadeInRight">
-              <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-              <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
-              <p class="wow fadeInRight" data-wow-duration="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-              <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
-              <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-              <i class="ion-ios-barcode-outline wow fadeInRight" data-wow-delay="0.4" data-wow-duration="0.5s"></i>
-              <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="features-row section-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img class="advanced-feature-img-right wow fadeInRight" src="/img/advanced-feature-3.jpg" alt="">
-            <div class="wow fadeInLeft">
-              <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-              <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-              <i class="ion-ios-albums-outline"></i>
-              <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- #advanced-features -->
-
-  <!--==========================
-    Call To Action Section
-  ============================-->
-  <!--
-  <section id="call-to-action">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 text-center text-lg-left">
-          <h3 class="cta-title">Call To Action</h3>
-          <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Call To Action</a>
-        </div>
-      </div>
-
-    </div>
-  </section>--><!-- #call-to-action -->
-
-  <!--==========================
-    More Features Section
-  ============================-->
-  <!--
-  <section id="more-features" class="section-bg">
-    <div class="container">
-
-      <div class="section-header">
-        <h3 class="section-title">More Features</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInLeft">
-            <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInRight">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInLeft">
-            <div class="icon"><i class="ion-ios-heart-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="box wow fadeInRight">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>--><!-- #more-features -->
-
-  <!--==========================
-    Clients
-  ============================-->
-  <!--
-  <section id="clients">
-    <div class="container">
-
-      <div class="row wow fadeInUp">
-
-        <div class="col-md-2">
-          <img src="/img/clients/client-1.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/img/clients/client-2.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/img/clients/client-3.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/img/clients/client-4.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/img/clients/client-5.png" alt="">
-        </div>
-
-        <div class="col-md-2">
-          <img src="/img/clients/client-6.png" alt="">
-        </div>
-
-      </div>
-    </div>
-  </section>--><!-- #more-features -->
-
-  <!--==========================
-    Pricing Section
-  ============================-->
-  <!--<section id="pricing" class="section-bg">
-    <div class="container">
-
-      <div class="section-header">
-        <h3 class="section-title">Pricing</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="box wow fadeInLeft">
-            <h3>Free</h3>
-            <h4><sup>$</sup>0<span> month</span></h4>
+<section id="main-banner-area" class="position-relative">
+    <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container m-0 p-0 bg-dark" data-alias="classic4export" data-source="gallery">
+        <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+        <div id="rev_main" class="rev_slider fullwidthabanner white" data-version="5.4.1">
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+                <!-- SLIDE 1 -->
+                <li data-index="rs-01" data-transition="fade" data-slotamount="default" data-easein="Power100.easeIn" data-easeout="Power100.easeOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="01">
+                    <!-- MAIN IMAGE -->
+                  <%= image_tag("/img/banner1-1.jpg", alt: "",
+                                data: { bgposition: "center center", bgfit:"cover", bgrepeat:"no-repeat", bgparallax:"10" },
+                                class: "rev-slidebg") %>
+                  <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-130','-130','-110','-80']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">The Ultimate</h1>
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-50','-20']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-bold whitecolor text-center">Creative Business</h1>
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','10','40']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1500" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">In Market</h1>
+                    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['40','40','60','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="2000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h4 class="whitecolor font-xlight text-center">The Best Multipurpose Multi Page Template in Market</h4>
+                    </div>
+                </li>
+                <!-- SLIDE 2 -->
+                <li data-index="rs-02" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="02">
+                    <!-- MAIN IMAGE -->
+                    <img src="images\banner1-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-130','-130','-110','-80']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">Let's Create</h1>
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-50','-20']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-bold whitecolor text-center">Deep Creativity</h1>
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','10','40']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1500" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">In Market</h1>
+                    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['40','40','60','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="2000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h4 class="whitecolor font-xlight text-center">Responsive and Retina Ready for All Devices</h4>
+                    </div>
+                </li>
+                <!-- SLIDE 3 -->
+                <li data-index="rs-03" data-transition="fade" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="2000" data-fsmasterspeed="1500" data-param1="03">
+                    <!-- MAIN IMAGE -->
+                    <img src="images\banner1-3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina="">
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-130','-130','-110','-80']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">We Make</h1>
+                    </div>
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-50','-20']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-bold whitecolor text-center">Inspired Design</h1>
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','10','40']" data-width="none" data-height="none" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="1500" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h1 class="text-capitalize font-xlight whitecolor text-center">Our Trax</h1>
+                    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['40','40','60','90']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-textalign="['center','center','center','center']" data-responsive_offset="on" data-start="2000" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
+                        <h4 class="whitecolor font-xlight text-center">Is a New Design Studio founded in NewYork</h4>
+                    </div>
+                </li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
         </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="box featured wow fadeInUp">
-            <h3>Business</h3>
-            <h4><sup>$</sup>29<span> month</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="box wow fadeInRight">
-            <h3>Developer</h3>
-            <h4><sup>$</sup>49<span> month</span></h4>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
-            </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </section>--><!-- #pricing -->
-
-
-  <!--==========================
-    Frequently Asked Questions Section
-  ============================-->
-  <section id="faq">
-    <div class="container">
-
-      <div class="section-header">
-        <h3 class="section-title">Frequently Asked Questions</h3>
-        <span class="section-divider"></span>
-        <p class="section-description">FAQ-NCC</p>
-      </div>
-
-      <ul id="faq-list" class="wow fadeInUp">
-        <li>
-          <a data-toggle="collapse" class="collapsed" href="#faq1">What is National Cadet Corps?<i class="ion-android-remove"></i></a>
-          <div id="faq1" class="collapse" data-parent="#faq-list">
-            <p>
-              The National Cadet Corps (NCC) is a youth development movement. It has enormous potential for nation building. The NCC provides opportunities to the youth of the country for their all-round development with a sense of Duty, Commitment, Dedication, Discipline and Moral Values so that they become able leaders and useful citizens. The NCC provides exposure to the cadets in a wide range of activities., with a distinct emphasis on Social Services, Discipline and Adventure Training. The NCC is open to all regular students of schools and colleges on a voluntary basis. The students have no liability for active military service.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <a data-toggle="collapse" href="#faq2" class="collapsed">When did NCC come into existence? <i class="ion-android-remove"></i></a>
-          <div id="faq2" class="collapse" data-parent="#faq-list">
-            <p>
-              The National Cadets Corps came into existence under the National Cadet Corps Act XXXI of 1948 (passed in April, 1948; came into existence on 16th July, 1948).
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <a data-toggle="collapse" href="#faq3" class="collapsed">What is the nature of the NCC Programme, whether compulsory or voluntary? <i class="ion-android-remove"></i></a>
-          <div id="faq3" class="collapse" data-parent="#faq-list">
-            <p>
-              Voluntary
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <a data-toggle="collapse" href="#faq4" class="collapsed">What are the various types of Camps in NCC? <i class="ion-android-remove"></i></a>
-          <div id="faq4" class="collapse" data-parent="#faq-list">
-            <p>
-              1.Combined Annual Training Camp( CATC)<BR>
-              2.Tal Sainik Camp(TSC)<BR>
-              3.Republic Day Camp(RDC)<BR>
-              4.Advanced Leadership Camp( ALC)<BR>
-              5.Course at Himalayan Mountaineering Institute(HMI), Darjeeling.<BR>
-              6.Paratroopers camp,Agra<BR>
-              7.National Integration Camp( NIC)<BR>
-              8.Army attachment camp<BR>
-              9.Trekking Camp<BR>
-              10.Social Service Camp (SSC)<BR>
-              11.Youth exchange program(YEP)<BR>
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <a data-toggle="collapse" href="#faq5" class="collapsed">What are the benefits of NCC C certificate? <i class="ion-android-remove"></i></a>
-          <div id="faq5" class="collapse" data-parent="#faq-list">
-            <p>
-              The ‘C’ certificate is the most important certificate of NCC training.  When we talk about the selection procedure of armed forces, the benefits of NCC certificate ‘C’ always give an advantage to the candidate.<BR>
-
-              Have a look at the benefits of NCC certificate ‘C’.<BR>
-
-              <B>Indian Army</B><BR>
-              In every regular course of the Indian Military Academy (IMA), 32 vacancies are reserved for the ‘C’ certified NCC candidates. But to join IMA it’s a must for all the candidates to be declared successful by the Services Selection Board.<BR>
-              The cadets with ‘C’ certificate are exempted from CDS examination conducted by UPSC. But for this, the cadet must have ‘A’ or ‘B’ grade in ‘C’ certificate.<BR>
-              NCC ‘C’ certification offers you 10–15 bonus marks in paramilitary forces recruitment i.e. BSF, CISF, CRPF, SSB etc.<BR>
-              If you have NCC ‘C’ certificates then your written exam will be waived off for the post of Soldier GD.<BR>
-              <B>Indian Navy</B><BR>
-              In Indian Navy, the NCC ‘C’ certified candidates get 6 extra marks for sailor’s job and 15 extra marks for Artificer Apprentices.<BR>
-              Up to 9 vacancies in navy are reserved for NCC ‘C’ certified candidates. To get the recruitment done on these vacancies the candidate must have done his/her B.Sc in physics or maths. B.E. candidates are also eligible for these vacancies. The age group of the candidate must be 19 to 24 years. He/she must have passed by SSB exempted from CDS examination of UPSC.<BR>
-              <B>Indian Air Force</B><BR>
-              In Air Force, the NCC ‘C’ certified candidates get the advantage of 5 marks.<BR>
-              In Pilot course total 10% vacancies are reserved for NCC cadets.<BR>
-              <B>Public Sector</B><BR>
-              Many organizations from the public sector give advantages to the cadets with ‘C’ certification like Indian Airlines, Pawan Hans Ltd, The National Small Industries Corp. Ltd. And many more.
-            </p>
-          </div>
-        </li>
-
-        <li>
-          <a data-toggle="collapse" href="#faq6" class="collapsed">Who is responsible for the conduct of NCC activities in an institution? <i class="ion-android-remove"></i></a>
-          <div id="faq6" class="collapse" data-parent="#faq-list">
-            <p>
-              The Associate NCC Officers are responsible to plan and organize training with the
-              assistance of the Permanent Instructors (PI) staff, detailed by the NCC unit.
-            </p>
-          </div>
-        </li>
-
-      </ul>
-
-    </div>
-  </section><!-- #faq -->
-
-  <!--==========================
-    Our Team Section
-  ============================-->
-  <section id="team" class="section-bg">
-    <div class="container">
-      <div class="section-header">
-        <h3 class="section-title"><B>OUR PROUD</B></h3>
-        <span class="section-divider"></span>
-        <p class="section-description"><B>Everywhere With Honour And Glory</B></p>
-      </div>
-      <div class="row wow fadeInUp">
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/img/team/team-1.jpg" alt=""></div>
-            <h4>Prof. K. Uma Mheshwar Rao </h4>
-            <span>Director,NITK Surathkal</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/img/team/team-2.jpg" alt=""></div>
-            <h4>Lt. P.Sam Johnson</h4>
-            <span>Associate NCC Officer </span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/img/team/team-3.jpg" alt=""></div>
-            <h4>Lt. Shivananda Nayak</h4>
-            <span>Associate NCC Officer </span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="/img/team/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </section><!-- #team -->
-
-  <!--==========================
-    Gallery Section
-  ============================-->
-  <section id="gallery">
-    <div class="container-fluid">
-      <div class="section-header">
-        <h3 class="section-title">Gallery</h3>
-        <span class="section-divider"></span>
-        <p class="section-description"><B>A tree is known by its fruits</B></p>
-      </div>
-
-      <div class="row no-gutters">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/img/gallery/gallery-1.jpg" class="gallery-popup">
-              <img src="/img/gallery/gallery-1.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/img/gallery/gallery-2.jpg" class="gallery-popup">
-              <img src="/img/gallery/gallery-2.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/img/gallery/gallery-3.jpg" class="gallery-popup">
-              <img src="/img/gallery/gallery-3.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/img/gallery/gallery-4.jpg" class="gallery-popup">
-              <img src="/img/gallery/gallery-4.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/img/gallery/gallery-5.jpg" class="gallery-popup">
-              <img src="/img/gallery/gallery-5.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="gallery-item wow fadeInUp">
-            <a href="/img/gallery/gallery-6.jpg" class="gallery-popup">
-              <img src="/img/gallery/gallery-6.jpg" alt="">
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- #gallery -->
-
-  <!--==========================
-    Contact Section
-  ============================-->
-  <section id="contact">
-    <div class="container">
-      <div class="row wow fadeInUp">
-
-        <div class="col-lg-4 col-md-4">
-          <div class="contact-about">
-            <h4>2 KAR ENGR COY NCC</h4>
-            <p></p>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4">
-          <div class="info">
-            <div>
-              <i class="ion-ios-location-outline"></i>
-              <p>2 KAR ENGR COY NCC<br>NITK SURATHKAL-575025</p>
-            </div>
-
-            <div>
-              <i class="ion-ios-email-outline"></i>
-              <p>NCCNITK2KAR@GMAIL.COM</p>
-            </div>
-
-            <div>
-              <i class="ion-ios-telephone-outline"></i>
-              <p>+919876543210</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-8">
-          <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-row">
-                <div class="form-group col-lg-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group col-lg-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-            </form>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- #contact -->
-
-</main>
-
-<!--==========================
-  Footer
-============================-->
-<footer id="footer">
-  <div class="container">
+    <ul class="social-icons-simple revicon white">
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a> </li>
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+    </ul>
+</section>
+<!--Main Slider ends -->
+<!--Some Services-->
+<div class="container">
     <div class="row">
-      <div class="col-lg-6 text-lg-left text-center">
-        <div class="copyright">
-          &copy; Copyright <strong>2_KAR_ENGR_COY_NCC</strong>. All Rights Reserved
+        <div class="col-md-12">
+            <div id="services-slider" class="owl-carousel">
+                <div class="item">
+                    <div class="service-box">
+                        <span class="bottom25"><i class="fa fa-clipboard"></i></span>
+                        <h4 class="bottom10 text-nowrap"><a href="javascript:void(0)">Well Documented</a></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-box">
+                        <span class="bottom25"><i class="fa fa-laptop"></i></span>
+                        <h4 class="bottom10"><a href="javascript:void(0)">Fully Responsive</a></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-box">
+                        <span class="bottom25"><i class="fa fa-globe"></i></span>
+                        <h4 class="bottom10"><a href="javascript:void(0)">Full Support</a></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-box">
+                        <span class="bottom25"><i class="fa fa-edit"></i></span>
+                        <h4 class="bottom10"><a href="javascript:void(0)">Clean Coded</a></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="service-box">
+                        <span class="bottom25"><i class="fa fa-globe"></i></span>
+                        <h4 class="bottom10"><a href="javascript:void(0)">SEO Optimized</a></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
-          -->
-          Designed by <a href="https://bootstrapmade.com/">NCC_CADETS</a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-          <a href="#intro" class="scrollto">Home</a>
-          <a href="#about" class="scrollto">About</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-        </nav>
-      </div>
     </div>
-  </div>
-</footer><!-- #footer -->
+</div>
+<!--Some Services ends-->
+<!--Some Feature -->
+<section id="our-feature" class="single-feature padding_bottom padding_top_half mt-1 mt-lg-n4 mt-md-n3">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+                <div class="heading-title mb-4">
+                    <h2 class="darkcolor font-normal bottom30">Lets take your <span class="defaultcolor">Business</span> to Next Level</h2>
+                </div>
+                <p class="bottom35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
+                <a href="#our-team" class="button btnsecondary gradient-btn pagescroll mb-sm-0 mb-4">Learn More</a>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
+                <div class="image"><img alt="SEO" src="images\awesome-feature.png"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Some Feature ends-->
+<!-- WOrk Process-->
+<section id="our-process" class="padding bgdark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                    <span>Quisque tellus risus, adipisci </span>
+                    <h2 class="font-normal">Our Work Process </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="process-wrapp">
+                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                    <span class="pro-step bottom20">01</span>
+                    <p class="fontbold bottom25">Concept</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
+                    <span class="pro-step bottom20">02</span>
+                    <p class="fontbold bottom25">Plan</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn active" data-wow-delay="500ms">
+                    <span class="pro-step bottom20">03</span>
+                    <p class="fontbold bottom25">Design</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
+                    <span class="pro-step bottom20">04</span>
+                    <p class="fontbold bottom25">Development</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
+                    <span class="pro-step bottom20">05</span>
+                    <p class="fontbold bottom25">Quality Check</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--WOrk Process ends-->
+<!-- Mobile Apps -->
+<section id="our-apps" class="padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-7 col-sm-12">
+                <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <span class="defaultcolor text-center text-md-left">Quisque tellus risus, adipisci viverra</span>
+                    <h2 class="darkcolor font-normal text-center text-md-left">Mobile App Designs</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-12">
+                <p class="text-center text-md-left">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center" id="app-feature">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="text-center text-md-right">
+                    <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
+                        <div class="icon"><i class="fas fa-cog"></i></div>
+                        <div class="text">
+                            <h3 class="bottom15">
+                                <span class="d-inline-block">Theme Options</span>
+                            </h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                        </div>
+                    </div>
+                    <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="350ms" style="visibility: visible; animation-delay: 350ms; animation-name: fadeInLeft;">
+                        <div class="icon"><i class="fas fa-edit"></i></div>
+                        <div class="text">
+                            <h3 class="bottom15">
+                                <span class="d-inline-block">Customization</span>
+                            </h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="app-image top30">
+                    <div class="app-slider-lock-btn"></div>
+                    <div class="app-slider-lock">
+                        <img src="images\iphone-slide-lock.jpg" alt="">
+                    </div>
+                    <div id="app-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
 
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<!-- JavaScript Libraries -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/jquery/jquery-migrate.min.js"></script>
-<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/lib/easing/easing.min.js"></script>
-<script src="/lib/wow/wow.min.js"></script>
-<script src="/lib/superfish/hoverIntent.js"></script>
-<script src="/lib/superfish/superfish.min.js"></script>
-<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
 
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
-
-<!-- Template Main Javascript File -->
-<script src="/js/main.js"></script>
-
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-470px, 0px, 0px); transition: all 0s ease 0s; width: 1645px;"><div class="owl-item cloned" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide2.jpg" alt="">
+                        </div></div><div class="owl-item cloned" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide3.jpg" alt="">
+                        </div></div><div class="owl-item active" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide1.jpg" alt="">
+                        </div></div><div class="owl-item" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide2.jpg" alt="">
+                        </div></div><div class="owl-item" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide3.jpg" alt="">
+                        </div></div><div class="owl-item cloned" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide1.jpg" alt="">
+                        </div></div><div class="owl-item cloned" style="width: 235px;"><div class="item">
+                            <img src="images\iphone-slide2.jpg" alt="">
+                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+                    <img src="images\iphone.png" alt="image">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="text-center text-md-left">
+                    <div class="feature-item mt-3 wow fadeInRight" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <div class="text">
+                            <h3 class="bottom15">
+                                <span class="d-inline-block">Powerful Code</span>
+                            </h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                        </div>
+                    </div>
+                    <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="350ms" style="visibility: visible; animation-delay: 350ms; animation-name: fadeInRight;">
+                        <div class="icon"><i class="far fa-folder-open"></i></div>
+                        <div class="text">
+                            <h3 class="bottom15">
+                                <span class="d-inline-block">Documentation </span>
+                            </h3>
+                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Mobile Apps ends-->
+<!-- Counters -->
+<section id="bg-counters" class="padding bg-counters parallax">
+    <div class="container">
+        <div class="row align-items-center text-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+                <div class="counters whitecolor  top10 bottom10">
+                    <span class="count_nums font-light" data-to="2010" data-speed="2500"> </span>
+                </div>
+                <h3 class="font-light whitecolor top20">Since We Started</h3>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <p class="whitecolor top20 bottom20 font-light title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+                <div class="counters whitecolor top10 bottom10">
+                    <span class="count_nums font-light" data-to="895" data-speed="2500"> </span>
+                </div>
+                <h3 class="font-light whitecolor top20">Since We Started</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counters ends-->
+<!-- Our Team-->
+<section id="our-team" class="padding_top half-section-alt teams-border">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+                    <span class="defaultcolor text-center text-md-left">Quisque tellus risus, adipisci</span>
+                    <h2 class="darkcolor font-normal bottom30 text-center text-md-left">Meet Our Experts</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="ourteam-slider" class="owl-carousel">
+                    <div class="item">
+                        <div class="team-box">
+                            <div class="image">
+                                <img src="images\team-1.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Jessica Twain</h4>
+                                <p>Agency Owner</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-box">
+                            <div class="image">
+                                <img src="images\team-2.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Jason Wudex </h4>
+                                <p>Designer</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-box single">
+                            <div class="image">
+                                <img src="images\team-3.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Jessica Twain</h4>
+                                <p>Agency Owner</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-box">
+                            <div class="image">
+                                <img src="images\team-4.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Hayden Wood</h4>
+                                <p>Marketing</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-box">
+                            <div class="image">
+                                <img src="images\team-1.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Shania Jackson </h4>
+                                <p>Print Media</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-box">
+                            <div class="image">
+                                <img src="images\team-2.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Jessica Twain</h4>
+                                <p>Agency Owner</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="team-box">
+                            <div class="image">
+                                <img src="images\team-3.jpg" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4 class="darkcolor">Jessica Twain</h4>
+                                <p>Agency Owner</p>
+                                <ul class="social-icons-simple">
+                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our Team ends-->
+<!--Pricing Start-->
+<section id="pricing" class="padding bglight">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="heading-title darkcolor wow fadeInUp" data-wow-delay="300ms">
+                    <span class="defaultcolor">Quisque tellus risus, adipisci </span>
+                    <h2 class="font-normal bottom30"> Pricing Offers </h2>
+                </div>
+            </div>
+            <div class="col-12 text-center ">
+                <div class="price-toggle-wrapper heading_space">
+                    <span class="Pricing-toggle-button month active">Monthly</span>
+                    <span class="Pricing-toggle-button year">Yearly</span>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme no-dots" id="price-slider">
+            <div class="item">
+                <div class="col-md-12">
+                    <div class="pricing-item wow fadeInUp animated sale" data-wow-delay="300ms" data-sale="60">
+                        <h3 class="font-light darkcolor">Basic</h3>
+                        <p class="bottom30">The standard version</p>
+                        <div class="pricing-price darkcolor"><span class="pricing-currency">$9.95</span> /<span class="pricing-duration">month</span></div>
+                        <ul class="pricing-list">
+                            <li>Support forum</li>
+                            <li>Free hosting</li>
+                            <li class="price-not">40MB of storage space</li>
+                            <li class="price-not">Social media integration</li>
+                            <li class="price-not">10GB of storage space</li>
+                        </ul>
+                        <a class="button" href="javascript:void(0)">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-12">
+                    <div class="pricing-item sale wow fadeInUp animated" data-wow-delay="380ms" data-sale="40">
+                        <h3 class="font-light darkcolor">Popular</h3>
+                        <p class="bottom30">The standard version</p>
+                        <div class="pricing-price darkcolor"><span class="pricing-currency">$19.95</span> /<span class="pricing-duration">month</span></div>
+                        <ul class="pricing-list">
+                            <li>Support forum</li>
+                            <li>Free hosting</li>
+                            <li>40MB of storage space</li>
+                            <li class="price-not">Social media integration</li>
+                            <li class="price-not">10GB of storage space</li>
+                        </ul>
+                        <a class="button" href="javascript:void(0)">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-12">
+                    <div class="pricing-item wow fadeInUp animated sale" data-wow-delay="460ms" data-sale="30">
+                        <h3 class="font-light darkcolor">Enterprise</h3>
+                        <p class="bottom30">The standard version</p>
+                        <div class="pricing-price darkcolor"><span class="pricing-currency">$29.95</span> /<span class="pricing-duration">month</span></div>
+                        <ul class="pricing-list">
+                            <li>Support forum</li>
+                            <li>Free hosting</li>
+                            <li>40MB of storage space</li>
+                            <li>Social media integration</li>
+                            <li class="price-not">10GB of storage space</li>
+                        </ul>
+                        <a class="button" href="javascript:void(0)">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-12">
+                    <div class="pricing-item wow fadeInUp animated sale" data-wow-deeay="400ms" data-sale="20">
+                        <h3 class="font-light darkcolor">Ultimate</h3>
+                        <p class="bottom30">The standard version</p>
+                        <div class="pricing-price darkcolor"><span class="pricing-currency">$49.95</span> /<span class="pricing-duration">month</span></div>
+                        <ul class="pricing-list">
+                            <li>Support forum</li>
+                            <li>Free hosting</li>
+                            <li>40MB of storage space</li>
+                            <li>Social media integration</li>
+                            <li>10GB of storage space</li>
+                        </ul>
+                        <a class="button" href="javascript:void(0)">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Pricing ends-->
+<!-- Partners-->
+<section id="our-partners" class="padding">
+    <div class="container">
+        <div class="row">
+            <h2 class="d-none">Partners Carousel</h2>
+            <div class="col-md-12 col-sm-12">
+                <div id="partners-slider" class="owl-carousel">
+                    <div class="item">
+                        <div class="logo-item"> <img alt="" src="images\logo-1.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-2.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-3.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-4.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-5.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-1.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-2.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-3.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-4.png"></div>
+                    </div>
+                    <div class="item">
+                        <div class="logo-item"><img alt="" src="images\logo-5.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Partners ends-->
+<!-- Testimonials -->
+<section id="our-testimonial" class="bglight padding_bottom">
+    <div class="parallax page-header testimonial-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6 col-md-12 text-center text-lg-right">
+                    <div class="heading-title wow fadeInUp padding_testi" data-wow-delay="300ms">
+                        <span class="whitecolor">Quisque tellus risus, adipisci</span>
+                        <h2 class="whitecolor font-normal">What People Say</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="owl-carousel" id="testimonial-slider">
+            <!--item 1-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="images\testimonial-1.jpg" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">John Smith</a></h4>
+                        <p>UPWORK, New York</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!--item 2-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="images\testimonial-2.jpg" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">Hayden Wood</a></h4>
+                        <p>FIVERR, Italy</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">Trax’s customer testimonial page is another beauty. Its simple design focuses on videos and standout quotes from customers. This approach is clean, straightforward, text that can be overwhelming and easy to skip.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!--item 3-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="images\testimonial-3.jpg" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">Kevin Miller</a></h4>
+                        <p>ENVATO, Australia</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">Trax is a company that provides tools to help professional event planning and execution, and their customers are very happy folks! The thing I love about their customer testimonial page provides content formats.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+            <!--item 4-->
+            <div class="item testi-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="testimonial-round d-inline-block">
+                            <img src="images\testimonial-4.jpg" alt="">
+                        </div>
+                        <h4 class="defaultcolor font-light top15"><a href="#.">Alina Johanson</a></h4>
+                        <p>INTEL, Sidney</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
+                        <p class="bottom15 top90">Startup Institute is a career accelerator that allows professionals to learn new skills, take their careers in a different direction, and pursue a career they are passionate about that have completed the program.</p>
+                        <span class="d-inline-block test-star">
+                                <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> <i class="far fa-star"></i>
+                                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testimonials end-->
+<!-- Contact US -->
+<section id="stayconnect" class="bglight position-relative">
+    <div class="container">
+        <div class="contactus-wrapp">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="heading-title wow fadeInUp text-center text-md-left" data-wow-delay="300ms">
+                        <h3 class="darkcolor bottom20">Stay Connected</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12" id="result"></div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group">
+                                    <label for="userName" class="d-none"></label>
+                                    <input class="form-control" type="text" placeholder="Name" required="" id="userName" name="userName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group">
+                                    <label for="companyName" class="d-none"></label>
+                                    <input class="form-control" type="text" placeholder="Company" id="companyName" name="companyName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group">
+                                    <label for="email" class="d-none"></label>
+                                    <input class="form-control" type="email" placeholder="Email" required="" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <button type="submit" class="button gradient-btn w-100" id="submit_btn">subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact US ends -->
+<!--Site Footer Here-->
+<footer id="site-footer" class=" bgdark padding_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <a href="index.html" class="footer_logo bottom25"><img src="images\logo-transparent.png" alt="MegaOne"></a>
+                    <p class="whitecolor bottom25">Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+                    <div class="d-table w-100 address-item whitecolor bottom25">
+                        <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
+                        <p class="d-table-cell align-middle bottom0">
+                            +01 - 123 - 4567 <a class="d-block" href="mailto:web@support.com">web@support.com</a>
+                        </p>
+                    </div>
+                    <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+                        <li><a href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="insta"><i class="fab fa-instagram"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Latest News</h3>
+                    <ul class="latest_news whitecolor">
+                        <li> <a href="#.">Aenean tristique justo et... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        <li> <a href="#.">Phasellus dapibus dictum augue... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        <li> <a href="#.">Mauris blandit vitae. Praesent non... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20 pl-0 pl-lg-5">
+                    <h3 class="whitecolor bottom25">Our Services</h3>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog-1.html">Latest News</a></li>
+                        <li><a href="pricing.html">Business Planning</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">Faq's</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Business hours</h3>
+                    <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p>
+                    <ul class="hours_links whitecolor">
+                        <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
+                        <li><span>Friday:</span> <span>09:00-21:00</span></li>
+                        <li><span>Sunday:</span> <span>09:00-20:00</span></li>
+                        <li><span>Calendar Events:</span> <span>24-Hour Shift</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer ends-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<%= javascript_include_tag  :media => "all" %>
+<script src="js\jquery-3.4.1.min.js"></script>
+<!--Bootstrap Core-->
+<script src="js\propper.min.js"></script>
+<script src="js\bootstrap.min.js"></script>
+<!--to view items on reach-->
+<script src="js\jquery.appear.js"></script>
+<!--Owl Slider-->
+<script src="js\owl.carousel.min.js"></script>
+<!--number counters-->
+<script src="js\jquery-countTo.js"></script>
+<!--Parallax Background-->
+<script src="js\parallaxie.js"></script>
+<!--Cubefolio Gallery-->
+<script src="js\jquery.cubeportfolio.min.js"></script>
+<!--Fancybox js-->
+<script src="js\jquery.fancybox.min.js"></script>
+<!--tooltip js-->
+<script src="js\tooltipster.min.js"></script>
+<!--wow js-->
+<script src="js\wow.js"></script>
+<!--Revolution SLider-->
+<script src="js\revolution\jquery.themepunch.tools.min.js"></script>
+<script src="js\revolution\jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script src="js\revolution\extensions\revolution.extension.actions.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.carousel.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.kenburn.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.layeranimation.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.migration.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.navigation.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.parallax.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.slideanims.min.js"></script>
+<script src="js\revolution\extensions\revolution.extension.video.min.js"></script>
+<!--custom functions and script-->
+<script src="js\functions.js"></script>
 </body>
 </html>
