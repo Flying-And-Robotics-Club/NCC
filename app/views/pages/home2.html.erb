@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Avilon Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Avilon
+    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <h1><a href="#intro" class="scrollto">NITK NCC</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a href="#intro"><B>Home</B></a></li>
+       <!-- <li><a href="#about">About NCC</a></li>-->
+        <li class="menu-has-children"><a href="#about"><B>ABOUT NCC</B></a>
+          <ul>
+            <li><a href="/pages/history" >History</a></li>
+            <li><a href="/pages/aims">Aims of NCC</a></li>
+            <li><a href="/pages/motto">Motto of NCC</a></li>
+            <li><a href="/users/sign_in">NCC FLAG</a></li>
+            <% if current_user != nil %>
+            <li><a href="/users/sign_out">Log out</a></li>
+              <% end %>
+            <li><a href="/pages/nccsong">NCC SONG</a></li>
+          </ul>
+        </li>
+
+
+        <li><a href="#features"><B>ENROLLMENT</B></a></li>
+        <!--<li><a href="#pricing"><B>DOWNLOAD</B></a></li>-->
+        <li class="menu-has-children"><a href="#"><B>DOWNLOADS</B></a>
+          <ul>
+            <li><%= link_to"NCC Act and Rules","/nccrules.pdf",:target => "_blank"%></li>
+            <li><%= link_to"ANO Handbook","/anohandbook.pdf",:target => "_blank"%></li>
+            <li><%= link_to"PI Staff Handbook","/pistaffhandbook.pdf",:target => "_blank"%></li>
+            <li><%= link_to"Cadet's Handbook","/nccrules.pdf",:target => "_blank"%></li>
+            <li><%= link_to"Cadet's Enrollment Book","/nccrules.pdf",:target => "_blank"%></li>
+           <!-- <li><a href="#">ANO Handbook</a></li>
+            <li><a href="#">PI Staff Handbook</a></li>
+            <li><a href="#">Cadet's Handbook</a></li>
+            <li><a href="#">Cadet's Enrollment Book</a></li>-->
+          </ul>
+        </li>
+        <li><a href="#team"><B>ALUMNI</B></a></li>
+        <li><a href="#gallery"><B>Gallery</B></a></li>
+        <li class="menu-has-children"><a href=""><B>Drop Down</B></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="menu-has-children"><a href="#">Drop Down 2</a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+            <li><a href="#">Drop Down 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><B>Contact Us</B></a></li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro">
+
+  <div class="intro-text">
+    <h2><B>Welcome to 2 KAR ENGR COY NCC</B></h2>
+    <p><B>National Institute Of Technology Karnataka, Surathkal</B></p>
+    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+  </div>
+<!--
+  <div class="product-screens">
+
+    <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+      <img src="/img/product-screen-1.png" alt="">
+    </div>
+
+    <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+      <img src="/img/product-screen-2.png" alt="">
+    </div>
+
+    <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+      <img src="/img/product-screen-3.png" alt="">
+    </div>
+
+  </div>
+-->
+</section><!-- #intro -->
+
+<main id="main">
+
+  <!--==========================
+    About Us Section
+  ============================-->
+  <section id="about" class="section-bg">
+    <div class="container-fluid">
+      <div class="section-header">
+        <h3 class="section-title">About NCC</h3>
+        <span class="section-divider"></span>
+        <p class="section-description">
+          National Cadet Corps is a Tri-Services Organisation comprising the Army, Navy and Air Force,<BR> engaged in grooming the youth – ‘The Leaders of Tomorrow’ – into disciplined and patriotic citizens.      </p>
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 about-img wow fadeInLeft">
+          <img src="/img/about-img.jpg" alt="">
+        </div>
+
+        <div class="col-lg-6 content wow fadeInRight">
+          <h4 style="color:darkcyan"><B>“UNITY AND DISCIPLINE-एकता और अनुशासन”</B></h4>
+          <h3>The NCC provides opportunities to the youth of the country for their all-round development with a sense of Duty, Commitment, Dedication, Discipline and Moral Values so that they become able leaders and useful citizens.</h3>
+          <h4><B>AIMS OF NCC</B></h4>
+          <ul>
+            <li><i class="ion-android-checkmark-circle"></i> To Create a Human Resource of Organized, Trained and Motivated Youth, To Provide Leadership in all Walks of life and be Always Available for the Service of the Nation.</li>
+            <li><i class="ion-android-checkmark-circle"></i> To Provide a Suitable Environment to Motivate the Youth to Take Up a Career in the Armed Forces.</li>
+            <li><i class="ion-android-checkmark-circle"></i> To Develop Character, Comradeship, Discipline, Leadership, Secular Outlook, Spirit of Adventure, and Ideals of Selfless Service amongst the Youth of the Country</li>
+          </ul>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #about -->
+  <!--==========================
+    Product Featuress Section
+  ============================-->
+  <section id="features">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-8 offset-lg-4">
+          <div class="section-header wow fadeIn" data-wow-duration="1s">
+            <h3 class="section-title">Enrollment Procedure</h3>
+            <p>NCC cadet enrolment process is very important in the NCC cadet’s selection. Due
+              care has been maintained to make selection procedure should be transparent and
+              unbiased. NCC cadet’s selection has taken place in four stages. </p>
+            <span class="section-divider"></span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-5 features-img">
+          <img src="/img/product-features.png" alt="" class="wow fadeInLeft" height="500" width="500">
+        </div>
+
+        <div class="col-lg-8 col-md-7 ">
+
+          <div class="row">
+
+            <div class="col-lg-6 col-md-6 box wow fadeInRight">
+              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              <h4 class="title"><a href="">Written Test</a></h4>
+              <p class="description">Objective type questions on Gk, Arithmetic, Mental Aptitude, Thematic Apperception
+                Test (TAT), Word Association Test (WAT) and Situation Response Test.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+              <div class="icon"><i class="ion-ios-flask-outline"></i></div>
+              <h4 class="title"><a href="">Physical Test</a></h4>
+              <p class="description">Running,Push ups</p>
+            </div>
+            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="ion-social-buffer-outline"></i></div>
+              <h4 class="title"><a href="">Personal Interview</a></h4>
+              <p class="description">Short listed cadets in written round are called for personal interview. </p>
+            </div>
+            <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+              <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+              <h4 class="title"><a href="">Merit on the basis of Vacancies</a></h4>
+              <p class="description">Finale result</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- #features -->
+  <!--==========================
+    Product Advanced Featuress Section
+  ============================-->
+  <!--
+  <section id="advanced-features">
+
+    <div class="features-row section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img class="advanced-feature-img-right wow fadeInRight" src="/img/advanced-feature-1.jpg" alt="">
+            <div class="wow fadeInLeft">
+              <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+              <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img class="advanced-feature-img-left" src="/img/advanced-feature-2.jpg" alt="">
+            <div class="wow fadeInRight">
+              <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+              <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
+              <p class="wow fadeInRight" data-wow-duration="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
+              <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+              <i class="ion-ios-barcode-outline wow fadeInRight" data-wow-delay="0.4" data-wow-duration="0.5s"></i>
+              <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-row section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img class="advanced-feature-img-right wow fadeInRight" src="/img/advanced-feature-3.jpg" alt="">
+            <div class="wow fadeInLeft">
+              <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
+              <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <i class="ion-ios-albums-outline"></i>
+              <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- #advanced-features -->
+
+  <!--==========================
+    Call To Action Section
+  ============================-->
+  <!--
+  <section id="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3 class="cta-title">Call To Action</h3>
+          <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="#">Call To Action</a>
+        </div>
+      </div>
+
+    </div>
+  </section>--><!-- #call-to-action -->
+
+  <!--==========================
+    More Features Section
+  ============================-->
+  <!--
+  <section id="more-features" class="section-bg">
+    <div class="container">
+
+      <div class="section-header">
+        <h3 class="section-title">More Features</h3>
+        <span class="section-divider"></span>
+        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInLeft">
+            <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInRight">
+            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInLeft">
+            <div class="icon"><i class="ion-ios-heart-outline"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInRight">
+            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>--><!-- #more-features -->
+
+  <!--==========================
+    Clients
+  ============================-->
+  <!--
+  <section id="clients">
+    <div class="container">
+
+      <div class="row wow fadeInUp">
+
+        <div class="col-md-2">
+          <img src="/img/clients/client-1.png" alt="">
+        </div>
+
+        <div class="col-md-2">
+          <img src="/img/clients/client-2.png" alt="">
+        </div>
+
+        <div class="col-md-2">
+          <img src="/img/clients/client-3.png" alt="">
+        </div>
+
+        <div class="col-md-2">
+          <img src="/img/clients/client-4.png" alt="">
+        </div>
+
+        <div class="col-md-2">
+          <img src="/img/clients/client-5.png" alt="">
+        </div>
+
+        <div class="col-md-2">
+          <img src="/img/clients/client-6.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>--><!-- #more-features -->
+
+  <!--==========================
+    Pricing Section
+  ============================-->
+  <!--<section id="pricing" class="section-bg">
+    <div class="container">
+
+      <div class="section-header">
+        <h3 class="section-title">Pricing</h3>
+        <span class="section-divider"></span>
+        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="box wow fadeInLeft">
+            <h3>Free</h3>
+            <h4><sup>$</sup>0<span> month</span></h4>
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
+              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
+              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
+              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
+              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <a href="#" class="get-started-btn">Get Started</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="box featured wow fadeInUp">
+            <h3>Business</h3>
+            <h4><sup>$</sup>29<span> month</span></h4>
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
+              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
+              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
+              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
+              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <a href="#" class="get-started-btn">Get Started</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="box wow fadeInRight">
+            <h3>Developer</h3>
+            <h4><sup>$</sup>49<span> month</span></h4>
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
+              <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
+              <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
+              <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
+              <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+            </ul>
+            <a href="#" class="get-started-btn">Get Started</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>--><!-- #pricing -->
+
+
+  <!--==========================
+    Frequently Asked Questions Section
+  ============================-->
+  <section id="faq">
+    <div class="container">
+
+      <div class="section-header">
+        <h3 class="section-title">Frequently Asked Questions</h3>
+        <span class="section-divider"></span>
+        <p class="section-description">FAQ-NCC</p>
+      </div>
+
+      <ul id="faq-list" class="wow fadeInUp">
+        <li>
+          <a data-toggle="collapse" class="collapsed" href="#faq1">What is National Cadet Corps?<i class="ion-android-remove"></i></a>
+          <div id="faq1" class="collapse" data-parent="#faq-list">
+            <p>
+              The National Cadet Corps (NCC) is a youth development movement. It has enormous potential for nation building. The NCC provides opportunities to the youth of the country for their all-round development with a sense of Duty, Commitment, Dedication, Discipline and Moral Values so that they become able leaders and useful citizens. The NCC provides exposure to the cadets in a wide range of activities., with a distinct emphasis on Social Services, Discipline and Adventure Training. The NCC is open to all regular students of schools and colleges on a voluntary basis. The students have no liability for active military service.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-toggle="collapse" href="#faq2" class="collapsed">When did NCC come into existence? <i class="ion-android-remove"></i></a>
+          <div id="faq2" class="collapse" data-parent="#faq-list">
+            <p>
+              The National Cadets Corps came into existence under the National Cadet Corps Act XXXI of 1948 (passed in April, 1948; came into existence on 16th July, 1948).
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-toggle="collapse" href="#faq3" class="collapsed">What is the nature of the NCC Programme, whether compulsory or voluntary? <i class="ion-android-remove"></i></a>
+          <div id="faq3" class="collapse" data-parent="#faq-list">
+            <p>
+              Voluntary
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-toggle="collapse" href="#faq4" class="collapsed">What are the various types of Camps in NCC? <i class="ion-android-remove"></i></a>
+          <div id="faq4" class="collapse" data-parent="#faq-list">
+            <p>
+              1.Combined Annual Training Camp( CATC)<BR>
+              2.Tal Sainik Camp(TSC)<BR>
+              3.Republic Day Camp(RDC)<BR>
+              4.Advanced Leadership Camp( ALC)<BR>
+              5.Course at Himalayan Mountaineering Institute(HMI), Darjeeling.<BR>
+              6.Paratroopers camp,Agra<BR>
+              7.National Integration Camp( NIC)<BR>
+              8.Army attachment camp<BR>
+              9.Trekking Camp<BR>
+              10.Social Service Camp (SSC)<BR>
+              11.Youth exchange program(YEP)<BR>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-toggle="collapse" href="#faq5" class="collapsed">What are the benefits of NCC C certificate? <i class="ion-android-remove"></i></a>
+          <div id="faq5" class="collapse" data-parent="#faq-list">
+            <p>
+              The ‘C’ certificate is the most important certificate of NCC training.  When we talk about the selection procedure of armed forces, the benefits of NCC certificate ‘C’ always give an advantage to the candidate.<BR>
+
+              Have a look at the benefits of NCC certificate ‘C’.<BR>
+
+              <B>Indian Army</B><BR>
+              In every regular course of the Indian Military Academy (IMA), 32 vacancies are reserved for the ‘C’ certified NCC candidates. But to join IMA it’s a must for all the candidates to be declared successful by the Services Selection Board.<BR>
+              The cadets with ‘C’ certificate are exempted from CDS examination conducted by UPSC. But for this, the cadet must have ‘A’ or ‘B’ grade in ‘C’ certificate.<BR>
+              NCC ‘C’ certification offers you 10–15 bonus marks in paramilitary forces recruitment i.e. BSF, CISF, CRPF, SSB etc.<BR>
+              If you have NCC ‘C’ certificates then your written exam will be waived off for the post of Soldier GD.<BR>
+              <B>Indian Navy</B><BR>
+              In Indian Navy, the NCC ‘C’ certified candidates get 6 extra marks for sailor’s job and 15 extra marks for Artificer Apprentices.<BR>
+              Up to 9 vacancies in navy are reserved for NCC ‘C’ certified candidates. To get the recruitment done on these vacancies the candidate must have done his/her B.Sc in physics or maths. B.E. candidates are also eligible for these vacancies. The age group of the candidate must be 19 to 24 years. He/she must have passed by SSB exempted from CDS examination of UPSC.<BR>
+              <B>Indian Air Force</B><BR>
+              In Air Force, the NCC ‘C’ certified candidates get the advantage of 5 marks.<BR>
+              In Pilot course total 10% vacancies are reserved for NCC cadets.<BR>
+              <B>Public Sector</B><BR>
+              Many organizations from the public sector give advantages to the cadets with ‘C’ certification like Indian Airlines, Pawan Hans Ltd, The National Small Industries Corp. Ltd. And many more.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <a data-toggle="collapse" href="#faq6" class="collapsed">Who is responsible for the conduct of NCC activities in an institution? <i class="ion-android-remove"></i></a>
+          <div id="faq6" class="collapse" data-parent="#faq-list">
+            <p>
+              The Associate NCC Officers are responsible to plan and organize training with the
+              assistance of the Permanent Instructors (PI) staff, detailed by the NCC unit.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section><!-- #faq -->
+
+  <!--==========================
+    Our Team Section
+  ============================-->
+  <section id="team" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title"><B>OUR PROUD</B></h3>
+        <span class="section-divider"></span>
+        <p class="section-description"><B>Everywhere With Honour And Glory</B></p>
+      </div>
+      <div class="row wow fadeInUp">
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="/img/team/team-1.jpg" alt=""></div>
+            <h4>Prof. K. Uma Mheshwar Rao </h4>
+            <span>Director,NITK Surathkal</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="/img/team/team-2.jpg" alt=""></div>
+            <h4>Lt. P.Sam Johnson</h4>
+            <span>Associate NCC Officer </span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="/img/team/team-3.jpg" alt=""></div>
+            <h4>Lt. Shivananda Nayak</h4>
+            <span>Associate NCC Officer </span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic"><img src="/img/team/team-4.jpg" alt=""></div>
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- #team -->
+
+  <!--==========================
+    Gallery Section
+  ============================-->
+  <section id="gallery">
+    <div class="container-fluid">
+      <div class="section-header">
+        <h3 class="section-title">Gallery</h3>
+        <span class="section-divider"></span>
+        <p class="section-description"><B>A tree is known by its fruits</B></p>
+      </div>
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item wow fadeInUp">
+            <a href="/img/gallery/gallery-1.jpg" class="gallery-popup">
+              <img src="/img/gallery/gallery-1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item wow fadeInUp">
+            <a href="/img/gallery/gallery-2.jpg" class="gallery-popup">
+              <img src="/img/gallery/gallery-2.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item wow fadeInUp">
+            <a href="/img/gallery/gallery-3.jpg" class="gallery-popup">
+              <img src="/img/gallery/gallery-3.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item wow fadeInUp">
+            <a href="/img/gallery/gallery-4.jpg" class="gallery-popup">
+              <img src="/img/gallery/gallery-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item wow fadeInUp">
+            <a href="/img/gallery/gallery-5.jpg" class="gallery-popup">
+              <img src="/img/gallery/gallery-5.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item wow fadeInUp">
+            <a href="/img/gallery/gallery-6.jpg" class="gallery-popup">
+              <img src="/img/gallery/gallery-6.jpg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #gallery -->
+
+  <!--==========================
+    Contact Section
+  ============================-->
+  <section id="contact">
+    <div class="container">
+      <div class="row wow fadeInUp">
+
+        <div class="col-lg-4 col-md-4">
+          <div class="contact-about">
+            <h4>2 KAR ENGR COY NCC</h4>
+            <p></p>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="info">
+            <div>
+              <i class="ion-ios-location-outline"></i>
+              <p>2 KAR ENGR COY NCC<br>NITK SURATHKAL-575025</p>
+            </div>
+
+            <div>
+              <i class="ion-ios-email-outline"></i>
+              <p>NCCNITK2KAR@GMAIL.COM</p>
+            </div>
+
+            <div>
+              <i class="ion-ios-telephone-outline"></i>
+              <p>+919876543210</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-8">
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #contact -->
+
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-lg-left text-center">
+        <div class="copyright">
+          &copy; Copyright <strong>2_KAR_ENGR_COY_NCC</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
+          -->
+          Designed by <a href="https://bootstrapmade.com/">NCC_CADETS</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+          <a href="#intro" class="scrollto">Home</a>
+          <a href="#about" class="scrollto">About</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/jquery/jquery-migrate.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/easing/easing.min.js"></script>
+<script src="/lib/wow/wow.min.js"></script>
+<script src="/lib/superfish/hoverIntent.js"></script>
+<script src="/lib/superfish/superfish.min.js"></script>
+<script src="/lib/magnific-popup/magnific-popup.min.js"></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="/js/main.js"></script>
+
+</body>
+</html>
