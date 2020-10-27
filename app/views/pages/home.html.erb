@@ -361,7 +361,7 @@
 <!--WOrk Process ends-->
 
 <section id="our-team" class="padding_top half-section-alt teams-border">
-  <div class="container">
+  <div class="fullwidthbanner-container" style="width: 70%; margin: auto;">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
@@ -374,10 +374,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4" style="margin: auto">
+      <div class="col-md-12">
+        <div id="ourteam-slider" class="owl-carousel">
           <div class="item">
             <div class="team-box">
-              <<div class="image">
+              <div class="image">
                 <%= image_tag("/img/team-2.jpg", alt: "",
                               data: { bgposition: "center center", bgfit:"cover", bgrepeat:"no-repeat", bgparallax:"10" },
                               class: "rev-slidebg") %>
@@ -392,12 +393,7 @@
                 </ul>
               </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12" >
-        <div id="ourteam-slider" class="owl-carousel">
+          </div>
           <div class="item">
             <div class="team-box">
               <div class="image">
