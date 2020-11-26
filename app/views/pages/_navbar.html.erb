@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg transparent-bg static-nav">
+<nav class="navbar navbar-expand-lg static-nav">
   <div class="container">
     <a class="navbar-brand" href="index.html">
       <%= image_tag("/img/ncclogo.png", alt: "logo", :width => 20,
@@ -15,12 +15,13 @@
               <div class="container">
                 <div class="row">
                   <div class="col-lg-3 col-md-6 col-sm-12">
-                    <h5 class="dropdown-title bottom10"> NCC </h5>
-                    <a class="dropdown-item" href="Aim.html">AIM</a>
-                    <a class="dropdown-item" href="moto.html">MOTO</a>
-                    <a class="dropdown-item" href="pledge.html">PLEDGE</a>
-                    <a class="dropdown-item" href="flag.html">FLAG</a>
-                    <a class="dropdown-item" href="history.html">HISTORY</a>
+                    <h5 class="dropdown-title bottom10"> <%= link_to "About Us", about_pages_path %> </h5>
+
+<!--                    <a class="dropdown-item" href="Aim.html">AIM</a>-->
+<!--                    <a class="dropdown-item" href="moto.html">MOTO</a>-->
+<!--                    <a class="dropdown-item" href="pledge.html">PLEDGE</a>-->
+<!--                    <a class="dropdown-item" href="flag.html">FLAG</a>-->
+<!--                    <a class="dropdown-item" href="history.html">HISTORY</a>-->
                     <div class="col-lg-3 col-md-6 col-sm-10">
                       <h5 class="dropdown-title bottom10">SONG</a>
                         <a class="dropdown-item" href="song.html">SONG</a>
