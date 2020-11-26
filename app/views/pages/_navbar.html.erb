@@ -1,9 +1,334 @@
 <nav class="navbar navbar-expand-lg transparent-bg static-nav">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="images\logo-transparent.png" alt="NCC NITK" class="logo-default">
-      <img src="images\logo.png" alt="NCC NITK" class="logo-scrolled">
+      <%= image_tag("/img/ncclogo.png", alt: "logo", :width => 20,
+                    class: "logo-default" ) %>
+      <%= image_tag("/img/ncclogo.png", alt: "logo", :width => 20,
+                    class: "logo-scrolled" ) %>
     </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown static">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+          <ul class="dropdown-menu megamenu">
+            <li>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="dropdown-title bottom10"> NCC </h5>
+                    <a class="dropdown-item" href="Aim.html">AIM</a>
+                    <a class="dropdown-item" href="moto.html">MOTO</a>
+                    <a class="dropdown-item" href="pledge.html">PLEDGE</a>
+                    <a class="dropdown-item" href="flag.html">FLAG</a>
+                    <a class="dropdown-item" href="history.html">HISTORY</a>
+                    <div class="col-lg-3 col-md-6 col-sm-10">
+                      <h5 class="dropdown-title bottom10">SONG</a>
+                        <a class="dropdown-item" href="song.html">SONG</a>
+                        <a class="dropdown-item" href="songhistory.html">HISTORY</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="dropdown-title opacity-10"> STRUCTURE & WORKING </h5>
+                    <a class="dropdown-item" href="organisation.html">ORGANISATION</a>
+                    <a class="dropdown-item" href="dgncc.html">DG NCC</a>
+                    <a class="dropdown-item" href="rank.html">RANKS</a>
+                    <a class="dropdown-item" href="camp.html">CENTRALLY ORGANIZED CAMPS</a>
+                    <a class="dropdown-item" href="training.html">TRAINING</a>
+                    <a class="dropdown-item" href="social.html">SOCIAL ACTIVITIES</a>
+                    <a class="dropdown-item" href="certification.html">CERTIFICATION & EXAMINATION</a>
+                    <a class="dropdown-item" href="coming-soon.html">DG & UNITS</a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="dropdown-title bottom10">NATIONAL SYMBOLS</h5>
+                    <a class="dropdown-item" href="indflag.html">FLAG</a>
+                    <a class="dropdown-item" href="nationalanthem.html">ANTHEM</a>
+                    <a class="dropdown-item" href="nationalsong.html">SONG</a>
+                    <a class="dropdown-item" href="nationalemblem.html">EMBLEM</a>
+                    <a class="dropdown-item" href="nationalgame.html">GAME</a>
+                    <a class="dropdown-item" href="nationalcalender.html">CALENDER</a>
+                    <a class="dropdown-item" href="nationalanimal.html">ANIMAL</a>
+                    <a class="dropdown-item" href="nationalbird.html">BIRD</a>
+                    <a class="dropdown-item" href="nationaltree.html">TREE</a>
+                    <a class="dropdown-item" href="nationalfruit.html">FRUIT</a>
+                    <a class="dropdown-item" href="nationalflower.html">FLOWER</a>
+                    <a class="dropdown-item" href="nationalriver.html">RIVER</a>
+                    <a class="dropdown-item" href="nationalsymbol.html">SYMBOL</a>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown position-relative">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NCC NITK</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coming-soon.html">HISTORY</a>
+            <a class="dropdown-item" href="coming-soon.html">ACTIVITIES</a>
+            <a class="dropdown-item" href="coming-soon.html">people's message</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown position-relative">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> STUDY MATERIAL </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coming-soon.html">ONE-1</a>
+            <a class="dropdown-item" href="coming-soon.html">TWO-2</a>
+            <a class="dropdown-item" href="coming-soon.html">THREE-3</a>
+            <a class="dropdown-item" href="coming-soon.html">FOUR-4</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown position-relative">
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ALUMNI </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coming-soon.html">OFFICER COMMANDING</a>
+            <a class="dropdown-item" href="coming-soon.html">JUNIOR COMMISSIONED OFFICER</a>
+            <a class="dropdown-item" href="coming-soon.html">NON COMMISSIONED OFFICER</a>
+            <a class="dropdown-item" href="coming-soon.html">CADETS</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="coming-soon.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="coming-soon.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--side menu open button-->
+  <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+    <span></span> <span></span> <span></span>
+  </a>
+</nav>
+<!-- side menu -->
+<div class="side-menu opacity-0 gradient-bg">
+  <div class="overlay"></div>
+  <div class="inner-wrapper">
+    <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+    <nav class="side-nav w-100">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages">
+            About<i class="fas fa-chevron-down"></i>
+          </a>
+          <div id="sideNavPages" class="collapse sideNavPages">
+            <ul class="navbar-nav mt-2">
+              <li class="nav-item">
+                <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#inner-1">
+                  NCC <i class="fas fa-chevron-down"></i>
+                </a>
+                <div id="inner-1" class="collapse sideNavPages sideNavPagesInner">
+                  <ul class="navbar-nav mt-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="Aim.html">AIM</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="moto.html">MOTO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pledge.html">PLEDGE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="flag.html">FLAG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="history.html">HISTORY</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#inner-2">
+                  SONG<i class="fas fa-chevron-down"></i>
+                </a>
+                <div id="inner-2" class="collapse sideNavPages sideNavPagesInner">
+                  <ul class="navbar-nav mt-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="song.html">SONG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="songhistory.html">HISTORY</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#inner-3">
+                  STRUCTURE & WORKING<i class="fas fa-chevron-down"></i>
+                </a>
+                <div id="inner-3" class="collapse sideNavPages sideNavPagesInner">
+                  <ul class="navbar-nav mt-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="organisation.html">ORGANISATION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="dgncc.html">DG NCC</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rank.html">RANKS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="camp.html">CENTRALLY ORGANIZED CAMPS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="training.html">TRAINING</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="social.html">SOCIAL ACTIVITIES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="certification.html">CERTIFICATION & EXAMINATION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">DG & UNITS</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#inner-4">
+                  NATIONAL SYMBOLS<i class="fas fa-chevron-down"></i>
+                </a>
+                <div id="inner-4" class="collapse sideNavPages sideNavPagesInner">
+                  <ul class="navbar-nav mt-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">FLAG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">ANTHEM</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="rank.html">SONG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="camp.html">EMBLEM</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="training.html">GAME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="social.html">CALENDER</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="certification.html">ANIMAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">BIRD</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">TREE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">FRUIT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">FLOWER</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">RIVER</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="coming-soon.html">SYMBOL</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages-2">
+            NCC NITK <i class="fas fa-chevron-down"></i>
+          </a>
+          <div id="sideNavPages-2" class="collapse sideNavPages">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="blog-1.html">HISTORY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-2.html">ACTIVITIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-detail.html">people's message</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages3">
+            STUDY MATERIAL <i class="fas fa-chevron-down"></i>
+          </a>
+          <div id="sideNavPages3" class="collapse sideNavPages">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="blog-1.html">1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-2.html">2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-detail.html">3</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link collapsePagesSideMenu" data-toggle="collapse" href="#sideNavPages4">
+            ALUMNI <i class="fas fa-chevron-down"></i>
+          </a>
+          <div id="sideNavPages4" class="collapse sideNavPages">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="blog-1.html">OFFICER COMMANDING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-2.html">JUNIOR COMMISSIONED OFFICER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-detail.html">NON COMMISSIONED OFFICER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-detail.html">CADETS</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Contact Us</a>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="side-footer w-100">
+      <ul class="social-icons-simple white top40">
+        <li><a href="https://www.facebook.com/2-Kar-Engr-Coy-NCC-102433731543988/"><i class="fab fa-facebook-f"></i> </a> </li>
+        <!--<li><a href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>-->
+        <li><a href="https://www.instagram.com/2_kar_engr_coy_nitk/?igshid=1d0ggpw5dnusc"><i class="fab fa-instagram"></i> </a> </li>
+      </ul>
+      <p class="whitecolor">&copy; <span id="year"></span> 2 KAR ENGR COY NCC. Made With Love by FLYING AND ROBOTICS CLUBS NITK-FARC</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!--
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown position-relative">
@@ -60,12 +385,12 @@
       </ul>
     </div>
   </div>
-  <!--side menu open button-->
+  <!--side menu open button
   <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
     <span></span> <span></span> <span></span>
   </a>
 </nav>
-<!-- side menu -->
+<!-- side menu
 <div class="side-menu opacity-0 gradient-bg">
   <div class="overlay"></div>
   <div class="inner-wrapper">
@@ -142,3 +467,4 @@
     </div>
   </div>
 </div>
+-->
