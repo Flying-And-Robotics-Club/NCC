@@ -35,6 +35,12 @@
         color: rgb(0,0,0) !important;
 
     }
+    #logo-image {
+        width: 100% !important;
+    }
+    .team-content {
+        height: 13vh !important;
+    }
 </style>
 
 <!--PreLoader-->
@@ -297,16 +303,16 @@
 <section id="our-feature" class="single-feature padding_bottom padding_top_half mt-1 mt-lg-n4 mt-md-n3">
     <div class="container">
         <div class="row d-flex align-items-center">
-            <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+            <div class="col-lg-8 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
                 <div class="heading-title mb-4">
                     <h2 class="darkcolor font-normal bottom30">ABOUT<span class="defaultcolor">NCC</span> </h2>
                 </div>
               <p class="bottom35">The National Cadet Corps is the Indian military cadet corps with its head Quarters at New Delhi. It is open to school and college students on voluntary basis.The National Cadet Corps in India is a voluntary organization which recruits cadets from high schools, colleges and Universities all over India. The Cadets are given basic military training in small arms and parades. The officers and cadets have no liability for active military service once they complete their course but are given preference over normal candidates during selections based on the achievements in the corps.  </p>
                 <a href="#our-team" class="button btnsecondary gradient-btn pagescroll mb-sm-0 mb-4">Learn More</a>
             </div>
-            <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
+            <div class="col-lg-3 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
                 <div class="image">
-                  <%= image_tag("/img/ncclogo.png", alt: "", width: "40") %>
+                  <%= image_tag("/img/ncclogo.png", alt: "", id: "logo-image") %>
                 </div>
             </div>
         </div>
@@ -371,130 +377,133 @@
         <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="ourteam-slider" class="owl-carousel">
-          <div class="item">
-            <div class="team-box">
-              <div class="team-content">
+    <div style="box-shadow: 1px 0 20px grey">
+      <div class="item">
+        <div class="team-box">
+          <div class="team-content">
 
-                <h3 class="darkcolor">Lt Col Anilesh Kaushik</h3>
-                <ul class="social-icons-simple">
-                  <h5 class="mt-2">UNIT : AAD</h5>
-                <ul class="social-icons-simple">
-                  <h5 class="mt-2">OFFICER COMMANDING</h5>
-                   <li><h6 class="mt-2"></h6></li>
+            <h3 class="darkcolor">Lt Col Anilesh Kaushik</h3>
+            <h5 class="mt-2">UNIT : AAD</h5>
+            <ul class="social-icons-simple">
+              <ul class="social-icons-simple">
+                <h5 class="mt-2">OFFICER COMMANDING</h5>
+                <li><h6 class="mt-2"></h6></li>
 
 
-                </ul>
-              </div>
-            </div>
+              </ul></ul>
           </div>
-          <div class="item">
-            <div class="team-box">
-              <div class="team-content">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel" id="carousel2">
+            <div class="item">
+              <div class="team-box">
+                <div class="team-content">
 
-                <h3 class="darkcolor">Lt P Sam Johnson</h3>
-                <ul class="social-icons-simple">
+                  <h3 class="darkcolor">Lt P Sam Johnson</h3>
                   <h5 class="mt-2">NITK</h5>
                   <ul class="social-icons-simple">
-                    <h5 class="mt-2">ASSOCIATE NCC OFFICER</h5>
+                    <ul class="social-icons-simple">
+                      <h5 class="mt-2">ASSOCIATE NCC OFFICER</h5>
 
 
-                </ul>
+                    </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="team-box">
-              <div class="team-content">
+            <div class="item">
+              <div class="team-box">
+                <div class="team-content">
 
-                <h3 class="darkcolor">Lt H Shivananda Nayaka</h3>
-                <ul class="social-icons-simple">
+                  <h3 class="darkcolor">Lt H Shivananda Nayaka</h3>
                   <h5 class="mt-2">NITK</h5>
                   <ul class="social-icons-simple">
-                    <h5 class="mt-2">ASSOCIATE NCC OFFICER</h5>
+                    <ul class="social-icons-simple">
+                      <h5 class="mt-2">ASSOCIATE NCC OFFICER</h5>
 
 
-                </ul>
+                    </ul></ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="team-box">
+            <div class="item">
+              <div class="team-box">
 
-              <div class="team-content">
+                <div class="team-content">
 
-                <h4 class="darkcolor">SUB S.Natrajan</h4>
-                <ul class="social-icons-simple">
+                  <h4 class="darkcolor">SUB S.Natrajan</h4>
                   <h5 class="mt-2">Unit: 20ER</h5>
                   <ul class="social-icons-simple">
-                    <h5 class="mt-2">JUNIOR COMMISSIONED OFFICER</h5>
+                    <ul class="social-icons-simple">
+                      <h5 class="mt-2">JUNIOR COMMISSIONED OFFICER</h5>
 
 
-                </ul>
+                    </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="team-box">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel" id="carousel3">
+            <div class="item">
+              <div class="team-box">
 
-              <div class="team-content">
+                <div class="team-content">
 
-                <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
-                <h5 class="mt-2">CHM Jagadeesh G</h5>
-                <ul class="social-icons-simple">
-                  <h5 class="mt-2">Unit: 20ER</h5>
+                  <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
+                  <h5 class="mt-2">CHM Jagadeesh G</h5>
                   <ul class="social-icons-simple">
-                    <h5 class="mt-2">JUNIOR COMMISSIONED OFFICER</h5>
-
-
-                </ul>
+                    <h5 class="mt-2">Unit: 20ER</h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="team-box">
+            <div class="item">
+              <div class="team-box">
 
-              <div class="team-content">
+                <div class="team-content">
 
-                <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
-                <h5 class="mt-2">CQMH S Mangaleshwaran</h5>
-                <ul class="social-icons-simple">
-                  <li><p>Unit: 2ER</p> </li>
+                  <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
+                  <h5 class="mt-2">CQMH S Mangaleshwaran</h5>
+                  <ul class="social-icons-simple">
+                    <li><p>Unit: 2ER</p> </li>
 
 
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="team-box">
+            <div class="item">
+              <div class="team-box">
 
-              <div class="team-content">
+                <div class="team-content">
 
-                <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
-                <h5 class="mt-2">CHM B Senthil Kumar</h5>
-                <ul class="social-icons-simple">
-                  <li><p>Unit: 17ER</p> </li>
+                  <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
+                  <h5 class="mt-2">CHM B Senthil Kumar</h5>
+                  <ul class="social-icons-simple">
+                    <li><p>Unit: 17ER</p> </li>
 
 
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="team-box">
+            <div class="item">
+              <div class="team-box">
 
-              <div class="team-content">
+                <div class="team-content">
 
-                <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
-                <h5 class="mt-2">HAV Deepak</h5>
-                <ul class="social-icons-simple">
-                  <li><p>Unit: 203ER</p> </li>
+                  <h4 class="darkcolor">NON COMMISSIONED OFFICER</h4>
+                  <h5 class="mt-2">HAV Deepak</h5>
+                  <ul class="social-icons-simple">
+                    <li><p>Unit: 203ER</p> </li>
 
 
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -776,40 +785,48 @@
 <!--Footer ends-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <%= javascript_include_tag  :media => "all" %>
-<script src="js\jquery-3.4.1.min.js"></script>
+<%= javascript_include_tag "/js/jquery-3.4.1.min.js" %>
 <!--Bootstrap Core-->
-<script src="js\propper.min.js"></script>
-<script src="js\bootstrap.min.js"></script>
+<%= javascript_include_tag "/js/propper.min.js" %>
+<%= javascript_include_tag "/js/bootstrap.min.js" %>
 <!--to view items on reach-->
-<script src="js\jquery.appear.js"></script>
+<%= javascript_include_tag "/js/jquery.appear.js" %>
 <!--Owl Slider-->
-<script src="js\owl.carousel.min.js"></script>
+<%= javascript_include_tag "/js/owl.carousel.min.js" %>
 <!--number counters-->
-<script src="js\jquery-countTo.js"></script>
+<%= javascript_include_tag "/js/jquery-countTo.js" %>
 <!--Parallax Background-->
-<script src="js\parallaxie.js"></script>
+<%= javascript_include_tag "/js/parallaxie.js" %>
 <!--Cubefolio Gallery-->
-<script src="js\jquery.cubeportfolio.min.js"></script>
+<%= javascript_include_tag "/js/jquery.cubeportfolio.min.js" %>
 <!--Fancybox js-->
-<script src="js\jquery.fancybox.min.js"></script>
+<%= javascript_include_tag "/js/jquery.fancybox.min.js" %>
 <!--tooltip js-->
-<script src="js\tooltipster.min.js"></script>
+<%= javascript_include_tag "/js/tooltipster.min.js" %>
 <!--wow js-->
-<script src="js\wow.js"></script>
+<%= javascript_include_tag "/js/wow.js" %>
 <!--Revolution SLider-->
-<script src="js\revolution\jquery.themepunch.tools.min.js"></script>
-<script src="js\revolution\jquery.themepunch.revolution.min.js"></script>
+<%= javascript_include_tag "/js/revolution/jquery.themepunch.tools.min.js" %>
+<%= javascript_include_tag "/js/revolution/jquery.themepunch.revolution.min.js" %>
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
-<script src="js\revolution\extensions\revolution.extension.actions.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.carousel.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.kenburn.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.layeranimation.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.migration.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.navigation.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.parallax.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.slideanims.min.js"></script>
-<script src="js\revolution\extensions\revolution.extension.video.min.js"></script>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.actions.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.carousel.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.kenburn.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.layeranimation.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.migration.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.navigation.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.parallax.min.js"%>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.slideanims.min.js" %>
+<%= javascript_include_tag "/js/revolution/extensions/revolution.extension.video.min.js" %>
 <!--custom functions and script-->
-<script src="js\functions.js"></script>
+<%= javascript_include_tag "/js/functions.js" %>
+<script>
+    $("#carousel2").owlCarousel({
+        items: 3
+    });
+    $("#carousel3").owlCarousel({
+        items: 4
+    });
+</script>
 </body>
 </html>

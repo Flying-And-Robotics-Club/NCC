@@ -65,3 +65,16 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+/.idea/.generators
+/.idea/.gitignore
+/.idea/.rakeTasks
+/public/img/banner1-4.jpg
+/public/img/banner1-5.jpg
+/config.database.yml.sqlite3
+/db/data.yml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/NCC.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/
