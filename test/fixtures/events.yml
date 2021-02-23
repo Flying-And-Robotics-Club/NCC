@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  tagline: MyString
+  description: MyText
+  location: MyString
+  spoc: MyString
+  start_date: 2021-02-23
+  end_date: 2021-02-23
+
+two:
+  name: MyString
+  tagline: MyString
+  description: MyText
+  location: MyString
+  spoc: MyString
+  start_date: 2021-02-23
+  end_date: 2021-02-23

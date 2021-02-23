@@ -1,0 +1,59 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  middle_name: 2021-02-23 16:10:32
+  last_name: MyText
+  branch: 1
+  reg_no: 1
+  roll_no: MyString
+  semester: 1
+  blood_group: MyString
+  nationality: MyString
+  dob: 2021-02-23
+  address: MyText
+  state: MyString
+  pincode: 1
+  parent_name: MyString
+  parent_phone: 1
+  parent_email: MyString
+  phone: 1
+  email_id: MyString
+  language: 1
+  highest_education: MyString
+  marks: MyString
+  year_of_study: 1
+  achievement_ncc: MyText
+  achievement_sport: MyText
+  achievement_art: MyText
+  achievement_other: MyText
+  fill_place: MyString
+  fill_date: 2021-02-23 16:10:32
+
+two:
+  middle_name: 2021-02-23 16:10:32
+  last_name: MyText
+  branch: 1
+  reg_no: 1
+  roll_no: MyString
+  semester: 1
+  blood_group: MyString
+  nationality: MyString
+  dob: 2021-02-23
+  address: MyText
+  state: MyString
+  pincode: 1
+  parent_name: MyString
+  parent_phone: 1
+  parent_email: MyString
+  phone: 1
+  email_id: MyString
+  language: 1
+  highest_education: MyString
+  marks: MyString
+  year_of_study: 1
+  achievement_ncc: MyText
+  achievement_sport: MyText
+  achievement_art: MyText
+  achievement_other: MyText
+  fill_place: MyString
+  fill_date: 2021-02-23 16:10:32
